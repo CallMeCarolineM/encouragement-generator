@@ -1,0 +1,69 @@
+@import "reset.scss";
+@import "colors.scss";
+$family: unquote("Signika");
+@import url("http://fonts.googleapis.com/css?family=#{$family}:400,700");
+
+$default-font-size: 20;
+$container-width: 700px;
+$picture-height: 400px;
+
+body {
+	background-color: $background;
+  	font: {
+    	family: $family;
+    	size: $default-font-size;
+    	weight: normal;
+  }
+}
+
+.container {
+	width: $container-width;
+	margin: auto;
+	background-color: $container;
+	min-height: 1000px;
+}
+
+h1 {
+	font: {
+		weight: 700;
+		size: $default-font-size + 30;
+	}
+	text-align: center;
+	padding: 30px;
+}
+
+.content {
+	display: block;
+	background-image: url("../images/ocean_medium.jpg");
+	background-repeat: no-repeat;
+	width: $container-width - 60;
+	margin: auto;
+	min-height: $picture-height;
+}
+
+.quote {
+	text-align: center;
+	color: $quote;
+	padding: 50px;
+}
+
+.author {
+	color: $author;
+	text-align: center;
+	margin-top: $picture-height * 0.2;
+}
+
+button {
+	display: block;
+	margin: 50px auto 0px auto;
+	padding: 10px;
+	font-size: $default-font-size - 5;
+	border-radius: 15px;
+}
+
+footer {
+	p {
+		text-align: center;
+	}
+	padding-top: 15px;
+}
